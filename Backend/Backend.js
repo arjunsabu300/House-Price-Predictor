@@ -4,7 +4,7 @@ import { spawn } from 'child_process';
 import bodyParser from 'body-parser';
 
 const app = express();
-const port = 5050;
+const port = 6000;
 let Result;
 
 app.use(cors());
