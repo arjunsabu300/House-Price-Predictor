@@ -11,11 +11,11 @@ app.use(cors());
 app.use(bodyParser.json()); 
 
 
-const pythonPath = 'C:/Users/arjun/AppData/Local/Programs/Python/Python39/python.exe';
+//const pythonPath = 'C:/Users/arjun/AppData/Local/Programs/Python/Python39/python.exe';
 const predictPrice = (data) => {
   return new Promise((resolve, reject) => {
     
-    const pythonProcess = spawn(pythonPath, ['testing.py']);  
+    const pythonProcess = spawn('python3', ['testing.py']);  
 
    
     pythonProcess.stdin.write(JSON.stringify(data) + '\n');
