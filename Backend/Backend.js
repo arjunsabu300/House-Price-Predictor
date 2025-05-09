@@ -4,7 +4,7 @@ import { spawn } from 'child_process';
 import bodyParser from 'body-parser';
 
 const app = express();
-const port = 5000;
+const port = 5050;
 let Result;
 
 app.use(cors());
@@ -70,6 +70,6 @@ app.post('/predict', async (req, res) => {
 });
 
 
-// app.listen(port, () => {
-//   console.log(`Server running at http://localhost:${port}`);
-// });
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});
