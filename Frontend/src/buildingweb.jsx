@@ -37,7 +37,7 @@ function Building() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/predict', formData);
+      const response = await axios.post('https://house-price-predictor-iws9.onrender.com/predict', formData);
       console.log(response.data.price)
       setPrice(response.data.price);
       setShowResult(true); 
