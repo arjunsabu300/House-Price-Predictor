@@ -3,7 +3,7 @@ import pandas as pd
 from joblib import load
 import sys
 import json
-from sklearn.metrics import mean_squared_error
+#from sklearn.metrics import mean_squared_error
 
 test_data = pd.read_csv("strat_testset.csv")
 feature_names = load("feature_names.joblib")
